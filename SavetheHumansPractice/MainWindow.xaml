@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SavetheHumansPractice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Save the Humans" Height="700" Width="1000">
     <Grid Height="319" VerticalAlignment="Bottom">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="140"/>
@@ -16,10 +16,12 @@
             <RowDefinition/>
             <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
-        <Button x:Name="button" Content="Start!" HorizontalAlignment="Left" Margin="30,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
-        <TextBlock x:Name="textBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="54,61,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Button x:Name="startButtton" Content="Start!" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
+        <StackPanel Grid.Column="2" Orientation="Vertical" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Avoid These" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <ContentControl Content="ContentControl" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
         <ProgressBar Grid.Column="1" HorizontalAlignment="Left" Height="10" Margin="60,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
-        <ContentControl Content="ContentControl" Grid.Column="2" HorizontalAlignment="Left" Margin="41,82,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Canvas Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="60,30,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
