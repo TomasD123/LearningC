@@ -8,7 +8,7 @@
         Title="Save the Humans" Height="700" Width="1000">
     <Window.Resources>
         <ControlTemplate x:Key="EnemyTemplate" TargetType="{x:Type ContentControl}">
-            <Grid Margin="0,0,0,-20">
+            <Grid Margin="0,0,0,20">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="69*"/>
                     <ColumnDefinition Width="13*"/>
