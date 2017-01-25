@@ -55,6 +55,8 @@ namespace SavetheHumansPractice
                 humanCaptured = false;
                 startButtton.Visibility = Visibility.Visible;
                 playArea.Children.Add(gameOverText);
+                Canvas.SetLeft(human, random.Next(100, (int)playArea.ActualWidth - 100));
+                Canvas.SetTop(human, random.Next(100, (int)playArea.ActualHeight - 100));
             }
         }
 
