@@ -47,5 +47,10 @@ namespace PracticeIfElse
                 labelToChange.HorizontalAlignment = HorizontalAlignment.Center;
             }
         }
+
+        private void enableCheckbox_Checked(object sender, RoutedEventArgs e)
+        {
+            enableCheckbox.IsChecked = true;
+        }
     }
 }
