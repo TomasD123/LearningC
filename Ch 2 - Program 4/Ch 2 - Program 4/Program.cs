@@ -12,7 +12,7 @@ namespace Ch_2___Program_4
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void NotMain()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
