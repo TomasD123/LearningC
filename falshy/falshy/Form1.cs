@@ -32,8 +32,7 @@ namespace falshy
 
                     System.Threading.Thread.Sleep(10);
                 }
-
-
+                
                 for (i = c; i > 0 && Visible; i--)
                 {
                     this.BackColor = Color.FromArgb(i, 255 - i, i);
