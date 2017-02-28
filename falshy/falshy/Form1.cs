@@ -22,39 +22,26 @@ namespace falshy
 
             while (Visible)
             {
-                for (int i = 0; i < 253 && Visible; i++)
+                int c, i;
+
+                for (c = 0; c < 254 && Visible; c++)
                 {
-                    for (int j = 254; j > 0; j--)
-                    {
-                        int c = j;
+                    this.BackColor = Color.FromArgb(c, 255 - c, c);
 
-                        this.BackColor = Color.FromArgb(c, 255 - c, c);
+                    Application.DoEvents();
 
-                        Application.DoEvents();
-
-                        System.Threading.Thread.Sleep(3);
-
-                        i -= j;
-                    }
+                    System.Threading.Thread.Sleep(10);
                 }
 
-                //for (int c = 0; c < 254 && Visible; c++)
-                //{
-                //    this.BackColor = Color.FromArgb(c, 255 - c, c);
 
-                //    Application.DoEvents();
+                for (i = c; i > 0 && Visible; i--)
+                {
+                    this.BackColor = Color.FromArgb(i, 255 - i, i);
 
-                //    System.Threading.Thread.Sleep(3);
-                //}
+                    Application.DoEvents();
 
-                //for (int c = 0; c > 0 && Visible; c--)
-                //{
-                //    this.BackColor = Color.FromArgb(c, 255 - c, c);
-
-                //    Application.DoEvents();
-
-                //    System.Threading.Thread.Sleep(3);
-                //}
+                    System.Threading.Thread.Sleep(10);
+                }
             }
         }
     }
