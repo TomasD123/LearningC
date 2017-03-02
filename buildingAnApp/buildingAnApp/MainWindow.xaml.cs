@@ -47,18 +47,17 @@ namespace buildingAnApp
             }
         }
 
-        public void button3_Click(object sender, RoutedEventArgs e)
+        private async void button3_Click(object sender, RoutedEventArgs e)
         {
             int someValue = 3;
             string name = "Joe";
-            if ( (someValue == 3) && (name == "Joe") )
+           
+            if( someValue == 3 && name == "Joe")
             {
                 myLabel.Text = "x is 3 and the name is Joe";
             }
-            else
-            {
-                myLabel.Text = "this line runs no matter what";
-            }
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            myLabel.Text = "This line runs no matter what";         
                 
         }
 
