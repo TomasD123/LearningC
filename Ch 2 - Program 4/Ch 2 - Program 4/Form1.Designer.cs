@@ -56,7 +56,6 @@
             this.enableCheckbox.Text = "Enable label changing";
             this.enableCheckbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.enableCheckbox.UseVisualStyleBackColor = true;
-            this.enableCheckbox.CheckedChanged += new System.EventHandler(this.enableCheckbox_CheckedChanged);
             // 
             // labelToChange
             // 

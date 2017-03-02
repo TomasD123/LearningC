@@ -39,16 +39,16 @@ namespace Ch_2___Program_4
             }
         }
 
-        private void enableCheckbox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (enableCheckbox.Checked == false)
-            {
-                enableCheckbox.Checked = false;
-            }
-            else
-            {
-                enableCheckbox.Checked = true;
-            }
-        }
+        //private void enableCheckbox_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    if (enableCheckbox.Checked == false)
+        //    {
+        //        enableCheckbox.Checked = false;
+        //    }
+        //    else
+        //    {
+        //        enableCheckbox.Checked = true;
+        //    }
+        //}
     }
 }
