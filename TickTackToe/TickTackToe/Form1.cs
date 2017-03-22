@@ -16,15 +16,42 @@ namespace TickTackToe
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void label1_DoubleClick(object sender, EventArgs e)
         {
-
+            label1.Visible = false;
+            
         }
 
-        private void Click(Button button)
-        {
 
+
+        /*keep track of moves to set Xs & Os and 
+         to check when I should start looking for wins*/
+        int moves, xo = 0;      
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            var button = (Button) sender; //casting sender to Button
+            //Checking to make sure a square isnt full
+            if (button.Text != "X" & button.Text != "O")
+            {
+                if ((xo % 2) == 0)
+                {
+                    button.Text = "X";
+                    xo++;
+                }
+                else if ((xo % 2) != 0)
+                {
+                    button.Text = "O";
+                    xo++;
+                }
+                moves = xo; 
+            }
+            else
+            {
+                button.Text = button.Text;
+            }
         }
+
     }
 }
