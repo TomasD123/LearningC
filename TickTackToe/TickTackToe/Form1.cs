@@ -19,7 +19,7 @@ namespace TickTackToe
 
         /*keep track of moves to set Xs & Os and 
          to check when I should start looking for wins*/
-        int moves, xo = 0;
+        int moves = 0;
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -39,7 +39,6 @@ namespace TickTackToe
         private void new_Game()
         {
             moves = 0;
-            xo = 0;
             try
             {
                 foreach (Control c in Controls)
@@ -57,18 +56,17 @@ namespace TickTackToe
             //Checking to make sure a square isnt full
             if (button.Text != "X" & button.Text != "O")
             {
-                //assigning values
-                if ((xo % 2) == 0)
+                //assigning values even is x odd is o
+                if ((moves % 2) == 0)
                 {
                     button.Text = "X";
-                    xo++;
+                    moves++;
                 }
-                else if ((xo % 2) != 0)
+                else if ((moves % 2) != 0)
                 {
                     button.Text = "O";
-                    xo++;
+                    moves++;
                 }
-                moves = xo;
             }
             else
             {
@@ -83,8 +81,7 @@ namespace TickTackToe
             }
             
         }
-
-
+        
         //method to check for win or draw
         private void game_Over()
         {
@@ -137,7 +134,7 @@ namespace TickTackToe
             else if(moves == 9)
             {
                 //if draw ask to see if players want to keep playing
-                if (MessageBox.Show("No Winner, Play Agin?", "Draw!", 
+                if (MessageBox.Show("No Winner, Play Again?", "Draw!", 
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     new_Game();
