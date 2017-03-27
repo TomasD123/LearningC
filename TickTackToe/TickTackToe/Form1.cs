@@ -87,53 +87,53 @@ namespace TickTackToe
             //horizontal check
             if ((button1.Text == button2.Text) && (button2.Text == button3.Text) && (button1.Text != ""))
             {
-                MessageBox.Show(button1.Text +" Wins!", "Awsome");
+                MessageBox.Show(button1.Text +" Wins!", "Winner");
                 new_Game();
             }
             else if ((button4.Text == button5.Text) && (button5.Text == button6.Text) && (button4.Text != ""))
             {
-                MessageBox.Show(button4.Text +" Wins!", "Awsome");
+                MessageBox.Show(button4.Text +" Wins!", "Winner");
                 new_Game();
             }
             else if ((button7.Text == button8.Text) && (button8.Text == button9.Text) && (button7.Text != ""))
             {
-                MessageBox.Show(button7.Text +" Wins!", "Awsome");
+                MessageBox.Show(button7.Text +" Wins!", "Winner");
                 new_Game();
             }
 
             //vertical check
             else if ((button1.Text == button4.Text) && (button4.Text == button7.Text) && (button1.Text != ""))
             {
-                MessageBox.Show(button1.Text +" Wins!", "Awsome");
+                MessageBox.Show(button1.Text +" Wins!", "Winner");
                 new_Game();
             }
             else if ((button2.Text == button5.Text) && (button5.Text == button8.Text) && (button2.Text != ""))
             {
-                MessageBox.Show(button2.Text +" Wins!", "Awsome");
+                MessageBox.Show(button2.Text +" Wins!", "Winner");
                 new_Game();
             }
             else if ((button3.Text == button6.Text) && (button6.Text == button9.Text) && (button3.Text != ""))
             {
-                MessageBox.Show(button3.Text +" Wins!", "Awsome");
+                MessageBox.Show(button3.Text +" Wins!", "Winner");
                 new_Game();
             }
 
             //diagnal check
             else if ((button1.Text == button5.Text) && (button5.Text == button9.Text) && (button1.Text != ""))
             {
-                MessageBox.Show(button1.Text +" Wins!", "Awsome");
+                MessageBox.Show(button1.Text +" Wins!", "Winner");
                 new_Game();
             }
             else if ((button3.Text == button5.Text) && (button5.Text == button7.Text) && (button3.Text != ""))
             {
-                MessageBox.Show(button3.Text +" Wins!", "Awsome");
+                MessageBox.Show(button3.Text +" Wins!", "Winner");
                 new_Game();
             }
 
             else if(moves == 9)
             {
                 //end_Game;
-                if (MessageBox.Show("No Winner, Play Agin?", "Bummer", 
+                if (MessageBox.Show("No Winner, Play Agin?", "Draw!", 
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     new_Game();
