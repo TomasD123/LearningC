@@ -57,6 +57,7 @@ namespace TickTackToe
             //Checking to make sure a square isnt full
             if (button.Text != "X" & button.Text != "O")
             {
+                //assigning values
                 if ((xo % 2) == 0)
                 {
                     button.Text = "X";
@@ -74,14 +75,17 @@ namespace TickTackToe
                 button.Text = button.Text;
             }
 
-            if(moves >= 5)
+            /*checking for numbers of moves before 
+              starting to check for a winner*/
+            if (moves >= 5)
             {
                 game_Over();
             }
             
         }
 
-        
+
+        //function to check for winner or draw
         private void game_Over()
         {
             //horizontal check
@@ -132,7 +136,7 @@ namespace TickTackToe
 
             else if(moves == 9)
             {
-                //end_Game;
+                //if draw ask to see if players want to keep playing
                 if (MessageBox.Show("No Winner, Play Agin?", "Draw!", 
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
