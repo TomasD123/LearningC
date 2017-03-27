@@ -85,7 +85,7 @@ namespace TickTackToe
         }
 
 
-        //function to check for winner or draw
+        //method to check for win or draw
         private void game_Over()
         {
             //horizontal check
@@ -122,7 +122,7 @@ namespace TickTackToe
                 new_Game();
             }
 
-            //diagnal check
+            //diagonal check
             else if ((button1.Text == button5.Text) && (button5.Text == button9.Text) && (button1.Text != ""))
             {
                 MessageBox.Show(button1.Text +" Wins!", "Winner");
