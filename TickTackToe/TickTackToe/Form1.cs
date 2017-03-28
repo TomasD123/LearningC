@@ -44,6 +44,7 @@ namespace TickTackToe
                 foreach (Control c in Controls)
                 {
                     Button button = (Button)c;
+                    button.Enabled = true;
                     button.Text = "";
                 }
             }            
@@ -54,19 +55,22 @@ namespace TickTackToe
         {
             Button button = (Button)sender; //casting sender to Button
             //Checking to make sure a square isnt full
-            if (button.Text != "X" & button.Text != "O")
+            if (button.Enabled)
             {
                 //assigning values even is x odd is o
                 if ((moves % 2) == 0)
                 {
                     button.Text = "X";
                     moves++;
+                    button.Enabled = false;
                 }
                 else if ((moves % 2) != 0)
                 {
                     button.Text = "O";
                     moves++;
+                    button.Enabled = false;
                 }
+                
             }
             else
             {
@@ -80,6 +84,35 @@ namespace TickTackToe
                 game_Over();
             }
             
+        }
+
+        private void preview_On(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            if (button.Enabled)
+            {
+                //assigning values even is x odd is o
+                if ((moves % 2) == 0)
+                {
+                    button.Text = "X";
+                    button.Enabled = true;
+                }
+                else if ((moves % 2) != 0)
+                {
+                    button.Text = "O";
+                    button.Enabled = true;
+                }
+            }
+        }
+        
+        private void preview_Off(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            if (button.Enabled)
+            {
+                button.Text = "";
+                button.Enabled = true;
+            }
         }
         
         //method to check for win or draw
@@ -146,6 +179,7 @@ namespace TickTackToe
                 
             }
         }
+
         
     }
 }

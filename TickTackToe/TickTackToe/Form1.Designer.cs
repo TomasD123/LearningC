@@ -106,6 +106,8 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.preview_On);
+            this.button1.MouseLeave += new System.EventHandler(this.preview_Off);
             // 
             // button2
             // 
@@ -117,6 +119,8 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.preview_On);
+            this.button2.MouseLeave += new System.EventHandler(this.preview_Off);
             // 
             // button3
             // 
@@ -128,6 +132,8 @@
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button_Click);
+            this.button3.MouseEnter += new System.EventHandler(this.preview_On);
+            this.button3.MouseLeave += new System.EventHandler(this.preview_Off);
             // 
             // button4
             // 
@@ -139,6 +145,8 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button_Click);
+            this.button4.MouseEnter += new System.EventHandler(this.preview_On);
+            this.button4.MouseLeave += new System.EventHandler(this.preview_Off);
             // 
             // button5
             // 
@@ -150,6 +158,8 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button_Click);
+            this.button5.MouseEnter += new System.EventHandler(this.preview_On);
+            this.button5.MouseLeave += new System.EventHandler(this.preview_Off);
             // 
             // button6
             // 
@@ -161,6 +171,8 @@
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button_Click);
+            this.button6.MouseEnter += new System.EventHandler(this.preview_On);
+            this.button6.MouseLeave += new System.EventHandler(this.preview_Off);
             // 
             // button7
             // 
@@ -172,6 +184,8 @@
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button_Click);
+            this.button7.MouseEnter += new System.EventHandler(this.preview_On);
+            this.button7.MouseLeave += new System.EventHandler(this.preview_Off);
             // 
             // button8
             // 
@@ -183,6 +197,8 @@
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button_Click);
+            this.button8.MouseEnter += new System.EventHandler(this.preview_On);
+            this.button8.MouseLeave += new System.EventHandler(this.preview_Off);
             // 
             // button9
             // 
@@ -194,6 +210,8 @@
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button_Click);
+            this.button9.MouseEnter += new System.EventHandler(this.preview_On);
+            this.button9.MouseLeave += new System.EventHandler(this.preview_Off);
             // 
             // Form1
             // 
